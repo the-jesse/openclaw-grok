@@ -1,0 +1,10 @@
+{
+  "id": "openclaw-grok",
+  "name": "Grok CLI Provider",
+  "description": "Enables the Grok CLI as a first-class coding agent inside OpenClaw using the Agent Client Protocol (ACP). Works with the @openclaw/grok-provider package.",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}

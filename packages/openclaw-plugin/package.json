@@ -1,0 +1,43 @@
+{
+  "name": "@openclaw/grok-provider",
+  "version": "0.1.0",
+  "private": true,
+  "description": "OpenClaw plugin that registers Grok CLI (`grok-cli`) as a first-class coding agent provider using the native ACP runtime. Bridges OpenClaw workflows to the grok-harness package.",
+  "license": "MIT",
+  "author": "Jesse Smith & Grok Build",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/the-jesse/openclaw-grok.git",
+    "directory": "packages/openclaw-plugin"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "openclaw.plugin.json",
+    "README.md"
+  ],
+  "openclaw": {
+    "extensions": [
+      "./dist/index.js"
+    ],
+    "install": {
+      "minHostVersion": ">=2026.4.0"
+    }
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "rm -rf dist tsconfig.tsbuildinfo",
+    "lint": "eslint src --ext .ts,.js",
+    "lint:fix": "eslint src --ext .ts,.js --fix",
+    "typecheck": "tsc --noEmit",
+    "prepack": "pnpm build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

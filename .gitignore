@@ -1,0 +1,66 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+.pnp.cjs
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+*.tsbuildinfo.tmp
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage/
+*.lcov
+.nyc_output/
+
+# IDE / Editor
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# OS
+Thumbs.db
+ehthumbs.db
+
+# pnpm
+.pnpm-store/
+.pnpm-debug.log
+
+# Husky
+.husky/_
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Misc
+*.tmp
+*.temp
+.cache/
+*.swp
+*~
+
+# Project specific (OpenClaw integration)
+# (none yet - add worktree examples or test fixtures in later phases)

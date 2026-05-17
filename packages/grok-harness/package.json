@@ -1,0 +1,44 @@
+{
+  "name": "@openclaw/grok-harness",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ACP session hardening, worktree safety, and Grok capability exposure for use as an OpenClaw coding agent (via the openclaw-plugin package).",
+  "license": "MIT",
+  "author": "Jesse Smith & Grok Build",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/the-jesse/openclaw-grok.git",
+    "directory": "packages/grok-harness"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "rm -rf dist tsconfig.tsbuildinfo",
+    "lint": "eslint src --ext .ts,.js",
+    "lint:fix": "eslint src --ext .ts,.js --fix",
+    "typecheck": "tsc --noEmit",
+    "prepack": "pnpm build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "typescript": ">=5.0.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

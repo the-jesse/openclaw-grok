@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "composite": true,
+    "noEmit": false,
+    "rootDir": ".",
+    "outDir": "dist"
+  },
+  "files": [],
+  "references": [
+    { "path": "./packages/grok-harness" },
+    { "path": "./packages/openclaw-plugin" }
+  ]
+}

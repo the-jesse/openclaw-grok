@@ -1,0 +1,4 @@
+# Placeholder to preserve the .github/ directory in version control.
+# GitHub workflows (CI), ISSUE_TEMPLATE, etc. will be populated in Task 0.3 and later.
+# Co-authored-by: Jesse Smith
+# Co-authored-by: Grok Build
